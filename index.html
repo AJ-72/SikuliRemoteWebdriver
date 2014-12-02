@@ -34,6 +34,8 @@
         <h1>
 <a id="sikuliremotewebdriver" class="anchor" href="#sikuliremotewebdriver" aria-hidden="true"><span class="octicon octicon-link"></span></a>SikuliRemoteWebdriver</h1>
 
+<h1></h1>
+
 <p>This is the remote driver version of sikuliwebdriver. This works similar to sikulifirefoxdriver
 (<a href="https://code.google.com/p/sikuli-api/wiki/SikuliWebDriver">https://code.google.com/p/sikuli-api/wiki/SikuliWebDriver</a>). </p>
 
@@ -52,9 +54,9 @@ we.getText();</li>
 <pre><code>  SikuliRemoteWebDriver driver = new SikuliRemoteWebDriver(DesiredCapabilities.chrome());
   driver.get("http://www.sears.com");
         driver.findElementById("keyword").sendKeys("blender");
-        ImageElement image =  driver.findImageElement(new URL("file:///D:/sikuli learning/RemoteSikuli/search.png"));
+        ImageElement image =  driver.findImageElement(new URL("file:///search.png"));
         image.getAsWebElement().click();
-        ImageElement image1 =  driver.findImageElement(new URL("file:///D:/sikuli learning/RemoteSikuli/blender.png"));
+        ImageElement image1 =  driver.findImageElement(new URL("file:///blender.png"));
         image1.click();
 </code></pre>
 
